@@ -1,12 +1,7 @@
-name: workshop
+name: base
 channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.7
-  - jupyter
-  - pandas
-  - scikit-learn
   - nltk
-  - jupyter_contrib_nbextensions
-  - bokeh
+  - xgboost

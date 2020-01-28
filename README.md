@@ -14,8 +14,7 @@ the image
 2. Pull the docker image and run it:  
 
         docker pull gcarrasco/ml:intro-workshop
-        docker run -p 8888:8888 gcarrasco/ml:intro-workshop
-
+        docker run -p 8888:8888 -v $(pwd)/notebooks:/home/jovyan/notebooks_local gcarrasco/ml:intro-workshop
 
 3. When you run the image, you will see a link to open a jupyter notebook, something like this:
 
@@ -30,4 +29,4 @@ _NOTE: To be build an pushed into **my** Dokcer hub. Edit accordingly to use you
  
 * Build: `docker build . -t gcarrasco/ml:intro-workshop .`
 * Push: `docker push gcarrasco/ml:intro-workshop`
-* Pull: `docker pull gcarrasco/ml:intro-workshop``
+* Pull: `docker pull gcarrasco/ml:intro-workshop`
