@@ -27,6 +27,6 @@ the image
 ## Building and publishing the docker image
 _NOTE: To be build an pushed into **my** Dokcer hub. Edit accordingly to use your hub._
  
-* Build: `docker build . -t gcarrasco/ml:intro-workshop .`
+* Build: `docker build . -t gcarrasco/ml:intro-workshop`
 * Push: `docker push gcarrasco/ml:intro-workshop`
 * Pull: `docker pull gcarrasco/ml:intro-workshop`
