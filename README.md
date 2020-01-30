@@ -15,6 +15,8 @@ the image
 
         docker pull gcarrasco/ml:intro-workshop
         docker run -p 8888:8888 -v $(pwd)/notebooks:/home/jovyan/notebooks_local gcarrasco/ml:intro-workshop
+        
+    _NOTE: If in Windows, replace `$(pwd)` with `%cd%` for Windows Command Line, or with `${PWD}` for PowerShell_
 
 3. When you run the image, you will see a link to open a jupyter notebook, something like this:
 
