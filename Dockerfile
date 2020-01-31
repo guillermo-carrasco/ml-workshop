@@ -12,4 +12,4 @@ ADD --chown=jovyan:users data /home/jovyan/data
 ADD --chown=jovyan:users notebooks /home/jovyan/notebooks
 
 # Add nltk data, this is to avoid having to configure the container to connect to the internet
-ADD --chown=jovyan:users nltk_data /home/jovyan/nltk_data
+RUN python -c "import nltk; nltk.download('stopwords')"
